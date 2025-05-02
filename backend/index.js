@@ -12,7 +12,10 @@ app.get("/ping",(req,res)=>{
     res.send("pong");
 });
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+    origin: "https://deploy-mernapp-ui.vercel.app", // frontend domain
+  credentials: true
+}));
 app.use('/auth',AuthRouter);
 app.use('/products',ProductRouter);
 
