@@ -25,7 +25,7 @@ function Login() {
         //When the user clicks the “Sign Up” button, you want to send their information (like name, email, and password) to a server. 
         // The server is running on your computer at http://localhost:8080, and the signup route is /auth/signup.
         try{
-            const url="http://localhost:8080/auth/login";// where your user’s signup information will be sent.
+            const url="deploy-mernapp-api-eight.vercel.app/auth/login";// where your user’s signup information will be sent.
             //Send a request to the server at this URL.”
             //await means wait here until the server sends back a response.
             // //fetch() is a built-in function that helps you talk to a server
